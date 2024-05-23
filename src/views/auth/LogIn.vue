@@ -8,7 +8,7 @@
       </div>
       <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
         <form @submit.prevent="login"> 
-          <h2 class="text-center mb-4">Login</h2>
+          <h2 class="text-center mb-4">Login!</h2>
           <!-- Email input -->
           <div class="form-outline mb-4">
             <input type="email" v-model="email" class="form-control form-control-lg" placeholder="email" required />
@@ -47,10 +47,9 @@
 
             <!-- Register Now -->
             <div class="col-6 text-center">
-              <a class="btn btn-primary btn-lg btn-block" style="background-color: #402368" href="/signup"
-                role="button">
+              <router-link to="/signup" class="btn btn-primary btn-lg btn-block" style="background-color: #402368" role="button">
                 <i class="fas fa-user-plus me-2" style="color: #ffffff;"></i> Register Now
-              </a>
+              </router-link>
             </div>
           </div>
         </form>
