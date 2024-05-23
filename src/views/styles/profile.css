@@ -1,0 +1,90 @@
+body {
+    background: rgb(99, 39, 120)
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #BA68C8
+}
+
+.profile-button {
+    background: rgb(99, 39, 120);
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #682773
+}
+
+.profile-button:focus {
+    background: #682773;
+    box-shadow: none
+}
+
+.profile-button:active {
+    background: #682773;
+    box-shadow: none
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 17px;
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.info span {
+    display: inline-block;
+    margin-left: 0px; 
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
+
+.btn-v {
+    background-color: #2d184b; /* Fondo transparente */
+    border-radius: 9ch; /* Hace el botón circular */
+    border-color: 2px solid #2d184b; /* Color del borde */
+    color: white;
+    text-decoration: none; /* Elimina el subrayado del texto */
+    padding: 0.5rem 1rem; /* Ajusta el relleno del botón según sea necesario */
+    display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+}
+
+.btn-v:hover {
+    background-color: #BA68C8; /* Cambia el color de fondo al hacer hover */
+    border-color: #BA68C8; /* Cambia el color del borde al hacer hover */
+    color: white; /* Cambia el color del texto al hacer hover */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.p-3.py-5 {
+    background-color: white; /* Establece el color de fondo de los elementos con clase p-3 py-5 a blanco */
+    border-radius: 1ch;
+    margin-bottom: 20px;
+}
+
+
+  .my-3 {
+    border: 2px solid #130a1f; 
+    border-radius: 9ch;
+}
