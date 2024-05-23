@@ -1,66 +1,66 @@
 import axios from 'axios';
 
 export const getStudents = () => {
-    return axios.get('http://siiga_backend.test/api/v1/students').then(response => response.data);
+    return axios.get('https://bkend-production.up.railway.app/api/v1/students').then(response => response.data);
 };
 
 export const getStudentById = (id) => {
-    return axios.get(`http://siiga_backend.test/api/v1/students/${id}`).then(response => response.data);
+    return axios.get(`https://bkend-production.up.railway.app/api/v1/students/${id}`).then(response => response.data);
 };
 
 export const getUsers = () => {
-    return axios.get('http://siiga_backend.test/api/v1/users').then(response => response.data);
+    return axios.get('https://bkend-production.up.railway.app/api/v1/users').then(response => response.data);
 };
 
 export const getUserById = (id) => {
-    return axios.get(`http://siiga_backend.test/api/v1/users/${id}`).then(response => response.data);
+    return axios.get(`https://bkend-production.up.railway.app/api/v1/users/${id}`).then(response => response.data);
 };
 
 export const getPayments = () => {
-    return axios.get('http://siiga_backend.test/api/v1/payments?include=student').then(response => response.data);
+    return axios.get('https://bkend-production.up.railway.app/api/v1/payments?include=student').then(response => response.data);
 };
 
 export const getPaymentById = (id) => {
-    return axios.get(`http://siiga_backend.test/api/v1/payments/${id}?include=student.user`).then(response => response.data);
+    return axios.get(`https://bkend-production.up.railway.app/api/v1/payments/${id}?include=student.user`).then(response => response.data);
 };
 
 export const createUser = (userData) => {
-    return axios.post('http://siiga_backend.test/api/v1/users', userData);
+    return axios.post('https://bkend-production.up.railway.app/api/v1/users', userData);
 };
 
 export const createStudent = (studentData) => {
-    return axios.post('http://siiga_backend.test/api/v1/students', studentData);
+    return axios.post('https://bkend-production.up.railway.app/api/v1/students', studentData);
 };
 
 export const createPayment = (paymentData) => {
-    return axios.post('http://siiga_backend.test/api/v1/payments', paymentData);
+    return axios.post('https://bkend-production.up.railway.app/api/v1/payments', paymentData);
 };
 
 export const updateUser = (userId, userData) => {
     const { email, password, ...updatedData } = userData;  
-    return axios.put(`http://siiga_backend.test/api/v1/users/${userId}`, updatedData);
+    return axios.put(`https://bkend-production.up.railway.app/api/v1/users/${userId}`, updatedData);
 };
 
 export const updateStudent = (studentId, studentData) => {
     const { ...updatedData } = studentData;  
-    return axios.put(`http://siiga_backend.test/api/v1/students/${studentId}`, updatedData);
+    return axios.put(`https://bkend-production.up.railway.app/api/v1/students/${studentId}`, updatedData);
 };
 
 export const updatePayment = (paymentId, paymentData) => {
     const { ...updatedData } = paymentData;  
-    return axios.put(`http://siiga_backend.test/api/v1/payments/${paymentId}`, updatedData);
+    return axios.put(`https://bkend-production.up.railway.app/api/v1/payments/${paymentId}`, updatedData);
 };
 
 export const deleteUser = (userId) => {
-  return axios.delete(`http://siiga_backend.test/api/v1/users/${userId}`);
+  return axios.delete(`https://bkend-production.up.railway.app/api/v1/users/${userId}`);
 };
 
 export const deleteStudent = (studentId) => {
-    return axios.delete(`http://siiga_backend.test/api/v1/students/${studentId}`);
+    return axios.delete(`https://bkend-production.up.railway.app/api/v1/students/${studentId}`);
   };
 
 export const deletePayment = (paymentId) => {
-    return axios.delete(`http://siiga_backend.test/api/v1/payments/${paymentId}`);
+    return axios.delete(`https://bkend-production.up.railway.app/api/v1/payments/${paymentId}`);
 };
 
 export const getFullName = (person) => {
@@ -138,3 +138,4 @@ export const filterPhoneNumber = (phoneNumber) => {
     const formattedNumber = cleanedNumber.replace(/(\d{3})(\d{3})(\d{2})(\d{2})/, '$1 $2 $3 $4');
     return formattedNumber;
 };
+
